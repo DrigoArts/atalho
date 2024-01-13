@@ -1,0 +1,635 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    /*background-color: #42464398;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.plus{
+    background-color: #007BFF;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    bottom: 15px;
+    right: 15px;
+    font-size: 60px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+.rtable{
+    width: 100%;
+    text-align: center;
+}
+.rtable2{
+    width: 100%;
+    text-align: center;
+}
+.rtable tbody tr:nth-child(2n){background-color: #f19292;}
+
+@media only screen and (min-width: 1600px) {
+.container{
+    display: flex;
+    width: auto;
+}
+.rtable th, .rtable td{padding: 7px 0;}
+.rtable tbody tr td:nth-child(1){width:25%;}
+.rtable tbody tr td:nth-child(2){width:25%;}
+.rtable tbody tr td:nth-child(3){width:25%;}
+.rtable tbody tr td:nth-child(4){width:25%;}
+
+}
+.tbtitulo{
+    width: 100%;
+    height: 35vh;
+    top: 0;
+    border: 0;
+}
+.titulo{
+    /*https://rduartes.web.app/imagem/*/
+    background-image: url(/imagem/titulo493.png);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.titulo1{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    /*https://rduartes.web.app/imagem/
+    background-image: url(/imagem/titulo493.png);*/
+}
+.tituloblackfriday{
+    color: white;
+    position: absolute;
+    top: 69px;
+    left: 180px;
+    font-size: 3.85vw; 
+    font-weight: bold;
+    align-items: center;
+}
+.redfriday{
+    position: absolute;
+    top: 120px;
+    color: red;
+}
+
+/*.titulo:hover{
+    scale: 1.009;
+    filter: blur(3px);
+}*/
+nav{
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tabela{
+    width: 100%;
+    background-color: #00000079;
+    z-index: -1;
+    position: absolute;
+    top: 205px;
+}
+.tabela2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title{
+    width: 100%;
+}
+
+/*MENU APOS TITULO*/
+.corpomenu{
+    background-color: black;
+}
+.menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alana, .botao1, .botao2, .botao3, .botao4, .botao5, .botao6, .botao7, .botao8, .botao9, .botao10, .botao11, .botao12{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.alana, .botao1, .botao2, .botao3, .botao4, .botao5, .botao6, .botao7, .botao8, .botao9, .botao10, .botao11, .botao12{
+    /*background-image: url(/imagem/button_email.png);*/
+    background-size: cover;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    
+    transform: scale(1);
+    transition: 0.3s;
+}
+/*.alana{
+    background-image: url(/imagem/alana.jpg);
+}
+.botao1{
+    background-image: url(/imagem/button_email.png);
+}
+.botao2{
+    background-image: url(/imagem/button_powerbi.png);
+}
+.botao3{
+    background-image: url(/imagem/button_pix.png);
+}
+.botao4{
+    background-image: url(/imagem/button_ame.png);
+}
+.botao5{
+    background-image: url(/imagem/button_garantia.png);
+}
+.botao6{
+    background-image: url(/imagem/button_grafico.png);
+}
+.botao7{
+    background-image: url(/imagem/button_acom.png);
+}
+.botao8{
+    background-image: url(/imagem/button_smartphone.png);
+}
+.botao9{
+    background-image: url(/imagem/button_dcp.png);
+}
+.botao10{
+    background-image: url(/imagem/button_whatsapp.png);
+}
+.botao11{
+    background-image: url(/imagem/toy.png);
+}
+.botao12{
+    /*background-image: url(https://rduartes.web.app/imagem/pm.jpg);*/
+    /*background-image: url(/imagem/pm.jpg);
+}*/
+/*.botao1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.5);
+}*/
+
+/*FIM DO MENU APOS TITULO*/
+
+/*CONFIGURAÇÕES DAS 4 COLUNAS*/
+
+.rtable2 tbody tr td:nth-child(1){width:100%;}
+.rtable2 tbody tr td:nth-child(2){width:45%;}
+.rtable2 tbody tr td:nth-child(3){width:25%;}
+.rtable2 tbody tr td:nth-child(4){width:15%;}
+
+/*FIM CONFIGURAÇÕES DAS 4 COLUNAS*/
+
+/*INICIO DA COLUNA 1*/
+.rtable2{
+    /*background-color: rgba(253, 252, 252, 0.863);*/
+    background-color: black;
+}
+.coluna1{
+    background-color: white;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*z-index: -1;*/
+}
+.botao, .botaogrey {
+    /*background-color: #4CAF50;*/
+    width: 100%;
+    height: 39.5px;
+    border: none;
+    color: black;
+    /*padding: 8.2px 0px;*/
+    padding: 9.5px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*margin: 10px;*/
+    cursor: pointer;
+    transition: background-color 0.1s; /* Adicionando transição para o efeito hover */
+}
+.botao{
+    background-color: rgba(153, 200, 253, 0.226);
+    /*border-radius: 40px;*/
+}
+.botaogrey{
+    background-color: rgba(219, 219, 219, 0.863);
+    /*border-radius: 40px;*/
+}
+
+.botao:hover {
+    /*border-radius: 40px;*/
+    background-color: red;/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+.botaogrey:hover {
+    /*border-radius: 40px;*/
+    background-color: red;/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+
+/*FIM DA COLUNA 1*/
+
+/*INICIO DA COLUNA 2*/
+.coluna2{
+    background-color: #831ED2;
+}
+.botaoA1{
+    border: none;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;
+    cursor: pointer;*/
+
+/*    transform: scale(0.95);
+    transition: 0.2s;*/
+}
+/*.botaoA1{
+    background-image: url(https://rduartes.web.app/imagem/ame.png);
+}*/
+
+/*.botaoA1:hover {
+    transform: scale(1.1);
+}*/
+/*FIM DA COLUNA 2*/
+
+
+
+
+
+/*INICIO COLUNA 3*/
+.coluna3{
+    /*background-color: #7ED957;*/
+    background-color: rgb(184, 41, 41);
+}
+/*FIM DA COLUNA 3*/
+
+
+
+/*INICIO COLUNA 4*/
+.coluna4{
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.titulopapeleta, .titulofiscal{
+    background-color: white;
+    font-size: 33px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh; /* Isso é opcional, dependendo do layout da sua página */
+    font-weight: bold; /* Adicionando negrito ao texto */
+}
+.titulofiscal {
+    color: red;
+}
+.titulopapeleta {
+    color: blue;
+}
+
+
+.numerario{
+    font-size: 14px;
+}
+.fiscal{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(255, 218, 175);
+}
+.botaofiscal, .numerario{
+    background-color: rgb(255, 218, 175);
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.botaofiscal:hover, .numerario:hover {
+    /*border-radius: 40px;*/
+    background-color: rgb(252, 142, 17);/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+.botaopapeleta{
+    background-color: rgb(188, 236, 148);
+    width: 100%;
+    height: 37px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.botaopapeleta:hover {
+    /*border-radius: 40px;*/
+    background-color: rgb(110, 216, 24);/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+
+
+/*.divcoluna4{
+    position: relative;
+    top: -10px;
+}*/
+
+/*.divcoluna4seg{
+    background-color: #831ED2;
+}*/
+/*FIM DA COLUNA 4*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.conteudo {
+    background-color: #f9f9f9;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: black;
+}
+
+.rtable3 tr td:nth-child(1){width:50%;}
+.rtable3 tr td:nth-child(2){width:50%;}
+/*.rtable3 tbody tr td:nth-child(3){width:33.3%;}*/
+.rtable3{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(243, 221, 22);
+}
+.rtable35{
+    border: red;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.rtable4{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.rtable5{
+    /*background-color: white;*/
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+/*.coluna5{
+    /*display: none;
+}*/
+
+/*COLUNA 6*/
+/*.coluna6{
+    position: relative;
+    top: 0;
+}
+*/
+
+/* Novo estilo para a lista de links no pop-up */
+#listaLinks {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Centralizar a lista */
+    font-size: 21px;
+    /*font-size: 18px;*/
+}
+
+#listaLinks li {
+    margin-bottom: 10px;
+}
+
+#listaLinks li a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#listaLinks li a:hover {
+    /*color: #0056b3;*/
+    color: #000000;
+}
+/* Centralizar o título da pop-up */
+#tituloPopup {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*CSS DO NUMERO DA VERSAO*/
+#versao {
+    position: absolute;
+    top: 203px;
+    right: 10px;
+    /*background-color: rgba(248, 169, 169, 0.7);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888;*/
+    padding: 10px;
+    color:  rgba(219, 219, 219, 0.863);
+}
+
+@media only screen and (min-width: 1200px){
+    .botaoA1, .botaoA2, .botaoA3, .botaoA4, .botaoA5, .botaoA6, .botaoA7, .botaoA8, .botaoA9, .botaoA10, .botaoA11, .botaoA12{
+        border: none;
+        width: 160px;
+        height: 160px;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+    .rtable3{
+        width: 100vw;
+    }
+    .rtable35{
+        display: flexbox;
+    }
+    .coluna55{
+        width: 50%;
+    }
+    .coluna56{
+        width: 50%;
+    }
+    .coluna7{
+        display: none;
+    }
+}
+
+/*@media only screen and (max-width: 1024px)*/
+@media only screen and (max-width: 1199px){
+    .botaoA1, .botaoA2, .botaoA3, .botaoA4, .botaoA5, .botaoA6, .botaoA7, .botaoA8, .botaoA9, .botaoA10, .botaoA11, .botaoA12{
+        border: none;
+        width: 120px;
+        height: 120px;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+    .tituloblackfriday{
+        color: white;
+        position: absolute;
+        top: 79px;
+        font-size: 3.85vw; 
+        font-weight: bold;
+        align-items: center;
+    }
+    .redfriday{
+        position: absolute;
+        top: 120px;
+        color: red;
+    }
+    .tituloblackfriday, .redfriday{
+        left: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 412px){
+    .botao1, .botao2, .botao3{
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+    .rtable2{
+        width: 50%;
+        text-align: center;
+    }
+    .coluna4{
+        width: 0px;
+        height: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/*TELA  768px*/
+@media screen and (max-width: 768px) {
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.tituloblackfriday, .redfriday{
+    display: none;
+}
+.background{
+    background-image: url(/portfolio/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+/*.corpomenu{
+    display: none;
+}*/
+.botaomenu{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: #97ec50;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 5%;
+}
+.plus{
+    position: relative;
+    background-color: #007BFF;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: 15px;
+    left: 310px;
+    font-size: 60px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+}
+.alana, .botao1, .botao2, .botao3, .botao4, .botao5, .botao6, .botao7, .botao8, .botao9, .botao10, .botao11{
+    width: 48.09px;
+    height: 48.09px;
+}
+.botao10, .botao11{
+    display: none;
+}
+.coluna1, .coluna, .coluna3, .coluna4, .rtable3, .rtable4/*, .rtable35*/{
+    display: none;
+}
+.titulo{
+    background-image: url(/img3/6CADASTRO.png);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.rtable2{
+    width: 100%;
+}
+.coluna2{
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+.coluna03{
+    position: absolute;
+    display: flex;
+    top: 110px;
+    z-index: 1;
+}
+.botaoA1, .botaoA2, .botaoA3, .botaoA4, .botaoA5, .botaoA6, .botaoA7, .botaoA8, .botaoA9, .botaoA10, .botaoA11, .botaoA12{
+    width: 120px;
+    height: 120px;
+}
+.coluna7{
+    width: 100%;
+    height: 100vh;
+}
+}

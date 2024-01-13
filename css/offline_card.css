@@ -1,0 +1,155 @@
+
+.card1x1{
+    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/1x1_leve_ganhe.png);
+}
+.card2x1{
+    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/2x1_leve_ganhe.png); 
+}
+.cardtelefonia{
+    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/6x1_telefonia_sem_plano.png);
+}
+.cardfgts1{
+    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/fgts_1x1.png);
+}
+.cardfgts2{
+    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/fgts_2x1.png);
+}
+.cardpanfletofgts{
+    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/panfleto_fgts.png); 
+}
+
+/*.card1x1::before {
+    background-image: url('/img3/papeleta/1x1_papeleta.png');
+}
+.card2x1::before {
+    background-image: url('/img3/papeleta/2x1_papeleta.png');
+}
+.cardtelefonia::before {
+    background-image: url('/img3/papeleta/plano_63.png'); 
+}
+.cardfgts1::before {
+    background-image: url('/img3/papeleta/fgts_1x1.png');
+}
+.cardfgts2::before {
+    background-image: url('/img3/papeleta/fgts_2x1.png');
+}
+.cardpanfletofgts::before {
+    background-image: url('/img3/papeleta/saque_fgts.png'); 
+}*/
+
+
+.card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease; /* Ajuste a duração e a função de temporização para suavizar a animação */
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: inline-block;
+    border: 2px solid transparent; /* Adicione uma borda transparente */
+}
+
+.card1x1 img, .card2x1 img, .cardtelefonia img, .cardfgts1 img, .cardfgts2 img, .cardpanfletofgts img{
+    display: none;
+}
+
+.card1x1:hover, .card2x1:hover, .cardtelefonia:hover, .cardfgts1:hover, .cardfgts2:hover, .cardpanfletofgts:hover{
+    transform: scale(1.05);
+    border: 2px solid #00f7ff; /* Adicione uma borda com cor neon azul ao fazer hover */
+}
+
+.card1x1::before, .card2x1::before, .cardtelefonia::before, .cardfgts1::before, .cardfgts2::before, .cardpanfletofgts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease; /* Ajuste a duração e a função de temporização para suavizar a animação */
+    border-radius: 20px;
+}
+
+.card1x1:hover::before, .card2x1:hover::before, .cardtelefonia:hover::before, .cardfgts1:hover::before, .cardfgts2:hover::before, .cardpanfletofgts:hover::before {
+    opacity: 1;
+}
+.table-card{
+    /*background-color: rgb(26, 71, 139);*/
+    background-color: rgb(184, 41, 41);
+    /*background-color: rgb(139, 26, 26);*/
+    /* é esse aqui o fundo background-color: rgb(184, 41, 41);*/
+    position: relative;
+    top: -100px;
+}
+@media only screen and (max-width: 1290px){
+    .card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts{
+        width: 100px;
+        height: 100px;   
+    }
+}
+@media only screen and (max-width: 1068px){
+    .card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts{
+        width: 90px;
+        height: 90px;   
+    }
+}
+@media only screen and (max-width: 1024px){
+    .card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts{
+        width: 77px;
+        height: 77px;
+        
+    }
+}
+
+/*.card, .card2, .card3 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: inline-block; /* Adicione esta propriedade para alinhar os cards horizontalmente 
+}
+
+.card img, .card2 img, .card3 img {
+    display: none;
+}
+
+.card:hover, .card2:hover, .card3:hover {
+    transform: scale(1.05);
+}
+
+.card::before, .card2::before, .card3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://rduartes.web.app/imagem/ame.png'); /* Substitua com a nova imagem 
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+
+.card:hover::before, .card2:hover::before, .card3:hover::before {
+    opacity: 1;
+}*/
