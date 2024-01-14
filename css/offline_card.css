@@ -1,42 +1,22 @@
 
 .card1x1{
-    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/1x1_leve_ganhe.png);
+    background-image: url();
 }
 .card2x1{
-    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/2x1_leve_ganhe.png); 
+    background-image: url(); 
 }
 .cardtelefonia{
-    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/6x1_telefonia_sem_plano.png);
+    background-image: url();
 }
 .cardfgts1{
-    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/fgts_1x1.png);
+    background-image: url();
 }
 .cardfgts2{
-    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/fgts_2x1.png);
+    background-image: url();
 }
 .cardpanfletofgts{
-    background-image: url(https://amer3-my.sharepoint.com/personal/rduarte_americanas_io/Documents/site%20rduartes%20off-line/site%20rduartes%20offline/img3/papeleta/panfleto_fgts.png); 
+    background-image: url(); 
 }
-
-/*.card1x1::before {
-    background-image: url('/img3/papeleta/1x1_papeleta.png');
-}
-.card2x1::before {
-    background-image: url('/img3/papeleta/2x1_papeleta.png');
-}
-.cardtelefonia::before {
-    background-image: url('/img3/papeleta/plano_63.png'); 
-}
-.cardfgts1::before {
-    background-image: url('/img3/papeleta/fgts_1x1.png');
-}
-.cardfgts2::before {
-    background-image: url('/img3/papeleta/fgts_2x1.png');
-}
-.cardpanfletofgts::before {
-    background-image: url('/img3/papeleta/saque_fgts.png'); 
-}*/
-
 
 .card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts {
     position: relative;
@@ -109,47 +89,3 @@
         
     }
 }
-
-/*.card, .card2, .card3 {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s;
-    margin: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-size: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    display: inline-block; /* Adicione esta propriedade para alinhar os cards horizontalmente 
-}
-
-.card img, .card2 img, .card3 img {
-    display: none;
-}
-
-.card:hover, .card2:hover, .card3:hover {
-    transform: scale(1.05);
-}
-
-.card::before, .card2::before, .card3::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://rduartes.web.app/imagem/ame.png'); /* Substitua com a nova imagem 
-    background-size: cover;
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-radius: 20px;
-}
-
-.card:hover::before, .card2:hover::before, .card3:hover::before {
-    opacity: 1;
-}*/
