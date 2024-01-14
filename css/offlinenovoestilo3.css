@@ -10,8 +10,7 @@
 }
 
 .plus{
-    /*background-color: #007BFF;*/
-    background-color: green;
+    background-color: #007BFF;
     position: fixed;
     width: 60px;
     height: 60px;
