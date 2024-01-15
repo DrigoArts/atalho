@@ -16,7 +16,7 @@
     });
     
     criarBotao("botao6", function() {
-        abrirLinkEmGuiaAnonima();
+        abrirLinkEmGuiaAnonima('Gráfico de vendas');
     });
     
     criarBotao("botao2", function() {
@@ -345,7 +345,7 @@ var novoTitulo = "PAPELETAS";
 document.getElementById("titulopapeleta").textContent = novoTitulo;
 
     // Suponha que você queira mudar o texto para "NOVO TÍTULO"
-    var novoTitulo = "Versão 14.7.98";
+    var novoTitulo = "Versão 14.7.99";
     document.getElementById("versao").textContent = novoTitulo;
 
 // Suponha que você queira mudar o texto para "NOVO TÍTULO"
