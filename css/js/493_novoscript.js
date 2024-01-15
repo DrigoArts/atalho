@@ -219,8 +219,8 @@ function Gente() {
     window.open(url, target);
 }
 function Troca() {
-    var url = "http://reversadhc/";
-    //var url = "https://trocafacil.americanas.io/";
+    //var url = "http://reversadhc/";
+    var url = "https://trocafacil.americanas.io/";
     var target = "_blank";
 
     window.open(url, target);
