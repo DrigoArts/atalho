@@ -1,0 +1,688 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    /*background-color: #42464398;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.plus{
+    background-color: #007BFF;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    bottom: 15px;
+    right: 15px;
+    font-size: 60px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+.rtable{
+    width: 100%;
+    text-align: center;
+}
+.rtable2{
+    width: 100%;
+    text-align: center;
+}
+.rtable tbody tr:nth-child(2n){background-color: #f19292;}
+
+@media only screen and (min-width: 1600px) {
+.container{
+    display: flex;
+    width: auto;
+}
+.rtable th, .rtable td{padding: 7px 0;}
+.rtable tbody tr td:nth-child(1){width:25%;}
+.rtable tbody tr td:nth-child(2){width:25%;}
+.rtable tbody tr td:nth-child(3){width:25%;}
+.rtable tbody tr td:nth-child(4){width:25%;}
+
+}
+.tbtitulo{
+    width: 100%;
+    height: 35vh;
+    top: 0;
+    border: 0;
+}
+.titulo{
+    /*https://rduartes.web.app/imagem/*/
+    background-image: url(/imagem/titulo493.pn);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.titulo1{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    /*https://rduartes.web.app/imagem/
+    background-image: url(/imagem/titulo493.png);*/
+}
+.titulo1{
+    background: linear-gradient(to bottom, red, rgb(122, 4, 4));
+    color: white; 
+    font-size: 10vw; 
+    font-weight: bold; 
+    padding: 2vw 4vw; 
+    border: none; 
+    animation: fundoAnimado 10s linear infinite;
+}
+.tituloblackfriday{
+    color: white;
+    position: absolute;
+    top: 69px;
+    left: 180px;
+    font-size: 3.85vw; 
+    font-weight: bold;
+    align-items: center;
+}
+.redfriday{
+    position: absolute;
+    top: 120px;
+    color: red;
+}
+
+/*.titulo:hover{
+    scale: 1.009;
+    filter: blur(3px);
+}*/
+nav{
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tabela{
+    width: 100%;
+    background-color: #00000079;
+    z-index: -1;
+    position: absolute;
+    top: 205px;
+}
+.tabela2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title{
+    width: 100%;
+}
+
+/*MENU APOS TITULO*/
+.corpomenu{
+    background-color: black;
+}
+.menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alana, .botao1, .botao2, .botao3, .botao4, .botao5, .botao6, .botao7, .botao8, .botao9, .botao10, .botao11, .botao12{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+.alana, .botao1, .botao2, .botao3, .botao4, .botao5, .botao6, .botao7, .botao8, .botao9, .botao10, .botao11, .botao12{
+
+    background-size: cover;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    
+    transform: scale(1);
+    transition: 0.3s;
+}
+.alana{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mbrJxAhpDwhEB9Fi5fuCxQko6UgSDa3qdDlrWp_N8D_8C-cnQZy6udhxSUjzCioD51DOqGyy9cgnlGHCHUP5uFqkVoy9rn3yhf_tQWGXLSujxa5C6VqSh87AfhaAgznaAoSyZHW4CkaHdmzZydDApm_wz2q52KGD4qz4yAdxFTlLRI9gXogq1_RxwOb_4o2_c1lpAbfhWfkmc0gagvZ3SsmJ4mwh2d4PlAHb53xEsWQM?encodeFailures=1&width=599&height=606);
+}
+.botao1{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mm0PhkoI-8CVAEil0XKHZKYpM4R2rvRtnv9uUCscQrBmcjnU5a-zSB7wcv1rFL5HQSRKI4NeRYw8AKOe-Vb-Pjt55_FztZ5MWkDJlThnLrvAfcfM5RecZOQuIECv0TjklYkpVGpXfIRZqzRVh84ryacl69v0SI4qg-gWDecKgso2rmfiV8LxDWGkh3Bq199gHEfqUFfMi2mc9lv3PN_Hljg?encodeFailures=1&width=500&height=500);
+}
+.botao2{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mD8H1shufAHljA5N1KS4UumfX3BXUU6WRekPjkhnRlT8x8nAsKPJL63FwkJ2v0_maFbZI9SKBivPL-UbZFHK6C8fLgUCcsntaO-ai7aMAOFDFVTMLZyAtxsKYFmKG-foo9Ailaffc7s-ge15nooNDhqYrI-r4OLDDJ0oGVYe1q1Ek40qOL8zzrYqXtjrNWFDzaCJdwFrkXjEsIp9RipHjXBrBfDNxsEyeJzWsPWJ6ChQ?encodeFailures=1&width=500&height=500);
+}
+.botao3{
+    background-image: url(https://blz04pap001files.storage.live.com/y4motxFix7Xo1Luc_lnRA1o0HeONpbKCi3Hp-01ypwbQ3HDLGx5J92qwlEzC7PcowrxXgrB-EHNYb6lcKtI7w_m108riEzMoFSKDb3WKtdn1LqOJdEfrPHjI2ooUu8nFzVLavxQBDCfU8WPL8xy-MycOqxyimSJjb1CScjPD8qPpsM2Lbf2Ip3tbSWL4NrmKTNJpyrFsEYadX2mtq9IX5yquNhiIlGR3YEggSMJhb5wQAM?encodeFailures=1&width=500&height=500);
+}
+.botao4{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mnVc94rYgWVWppU2l14Nys2iuAgStnchbr0tH9cqA0pMaX1ov8V96KEmsaoHlXtfytNF7ixGujnW_0C4FzsgLaxGd8kEhXDPskQ0V_tOOl0dOQANdKIHkSJiXhql7bu93pjT1RGFP0PLkgtccBH9y4zxynm5AIfMzQjrlhsOM5ysRhcULK5sL_6UceN2DgW8HTxj5CvNZ6xhCKbML0tvKUW8j6tDuycRbYVGOlOVBhYo?encodeFailures=1&width=512&height=512);
+}
+.botao5{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mwztv5q0OSrgGkCQutH11jyeuOJOhJTh-lFVbxgBqpG-0_TsQLAKJC8KL4MDzUtvAlxB2n4n8qPZEEoAsqoMvj34ilv8LXLDsBmNgrpjOY18bqQ0IA6rI316QaQvczER7ntCVBIGI-c0wd4M_LxApYl5sENuRkPy-f2NcrrO3VIEgx8OfFWHGxjGO1hIavl419ZHWT3H1ov5XCca2AwwmQ6vIhCXBLG8E3Y7zguEHaYM?encodeFailures=1&width=500&height=500);
+}
+.botao6{
+    background-image: url(https://blz04pap001files.storage.live.com/y4muoQsL5uRLYLu_hC_d_Fe4PVjNmT5ULCfCfLEPuMXBM4E5774yF6K7madYx8x6RXmtPlZpNZOf_ODZi5aHT2zn9MKJRt61IMr7A1GkdR4BZ4ASdnalihdmplLoz7YV-H7oW9aOjtF7HfGgcPdWt5gYd8kyH3OIrXqrRlSan1e1-RnRjZMf6I00ltX5EFTPH0abW9mSLRwx1CMaYE-gy4Q9erBxFg1mcdSFmvUEKMo5vg?encodeFailures=1&width=500&height=500);
+}
+.botao7{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mj9E-XzqSvBhH7XN0waZh_aaM45Awaj6K0XmvC_k-RrOPtgxWfInsVsWi1G1S6L_d5bW-ZlTMiwtc1bEf2_oP7eHD4O6VN_gsnzpA2WwTiQGJhq_vE7KE7-9Zgm5M6zc2Iq46pO0oYQP4YV9rMeO93vPbcSlK-CBMNaj0ueIcGiw5kPurSOMkU5QSuVT8TH5wUXdAr0kkTdJIyHGQHaUeNl6HvpDDYfZH04D1HQJrDLQ?encodeFailures=1&width=500&height=500);
+}
+.botao8{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mr-tP4JARRcjg6875qvMofV6Z1_6_yGX8aDmh5ebEDB1Aa2ebXRYn44p6wWn2sbB8W98Sp7DxEFJjYIJiegLo-xhbB-RMbiwbcwLif-Rc6RgIpiZmZtJieQTcneRYVVPYOiLL4FG4ATxt4oI3WWAxUvVRqJ17KRPsrwDSpIOieHeSeJfj4i9ApbW4EFJg7RqtbomKl1fTxg707fVfhebUFqHZQI8xT3UK3DXoL4GQlGE?encodeFailures=1&width=500&height=500);
+}
+.botao9{
+    background-image: url(https://blz04pap001files.storage.live.com/y4m26pUyxS15Ragdz_hChfAUXmIKwyjxs6z23n1YAG0FjlUb9i3J_qj8k0Y3Z_u4dJPGL3A3pBy0HDBq3_DQzRXXBM6xxTcELstuP9uZiVrI_JQ91sNDP_EfU5ADxmW6FdxvxUdKQQ7P8sQIbWBdWchETmdLnIWoxBo_OC074I6_aKlvOrzc7lJ4GoBo06CPPMEuWZC1QYy5u9Q0aw7KOhNiA0Lns4M7bRFUSSk7yeu7s4?encodeFailures=1&width=120&height=120);
+}
+.botao10{
+    background-image: url(https://blz04pap001files.storage.live.com/y4m1GTYkcwSKJUsr0_L-WXEbWKZsDVQHUu6_Y-UgWY9BX0V3FF7WloqEnN_Ke1GEoIQ_BaH6YGOnAt3Ep8TfgP0FORQomYzeQy290hAO8UyYI-eJ8Gh9q8Ih7x4XbKEuR9nnCmjGk8RLlEkkj2Lk5SdD93FJiggephstStOZnrVjlncOVtB6yGhzen1mH7qRWfH2yq8IYxO93exNFmu4R7pchOlCXF0B5DTb-oZ_zhpjVo?encodeFailures=1&width=606&height=606);
+}
+.botao11{
+    background-image: url(https://blz04pap001files.storage.live.com/y4m3e_TlAgPKweZzqRRYwTg3OiKH6fjF_p-QH452ro6zdYnjNzL352HBkVuxR5wToL_d_37mUby2ZOV2ToIy60BcOrw5hrvKf71fOMgm5sTsUTEypiWAVS6N14p-KPwaA8mqIix-dkqAZA8EKEjFC5WsW6naCh4A4mUJs3YrLAgrxw3OGvsOVC9icsCweUldWrLx_Q4vz6hW-7LjtUVFfsvhjsEXUBAmbQGrHBc09BWvsA?encodeFailures=1&width=606&height=606);
+}
+.botao12{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mSVHFLGk6yu3pJ9x6sOeBsJjqpdKL_HoGiUxAylAZ9lQoqD4r3UY60nr0XAI2Z6Xrd1ZviT6Avb6l-J3NzgZhYpdmoCGYhXwIcm0QIiSO46aMoHG-bWyxe3GHLikPbyv441vSyp-ukPyi971iNkAjedbItIZKUl4u9Yg3Fla2yPknmXatlr-66t39zEiUt0-uTqphHZ4Kn-iJcLysV2wwICLhMOaJsnlv4f-OcbvC6-0?encodeFailures=1&width=300&height=300);
+}
+/*TROQUEI A POSIÇÃO*/
+
+/*.botao1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.5);
+}*/
+
+/*FIM DO MENU APOS TITULO*/
+
+/*CONFIGURAÇÕES DAS 4 COLUNAS*/
+
+.rtable2 tbody tr td:nth-child(1){width:100%;}
+.rtable2 tbody tr td:nth-child(2){width:45%;}
+.rtable2 tbody tr td:nth-child(3){width:25%;}
+.rtable2 tbody tr td:nth-child(4){width:15%;}
+
+/*FIM CONFIGURAÇÕES DAS 4 COLUNAS*/
+
+/*INICIO DA COLUNA 1*/
+.rtable2{
+    /*background-color: rgba(253, 252, 252, 0.863);*/
+    background-color: black;
+}
+.coluna1{
+    background-color: white;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*z-index: -1;*/
+}
+.botao, .botaogrey {
+    width: 100%;
+    height: 39.5px;
+}
+.botaogrey2{
+    width: 222%;
+    height: 39.5px;
+}
+.botaogrey3{
+    width: 398%;
+    height: 39.5px;
+}
+.botaogrey4{
+    width: 665%;
+    height: 39.5px;
+}
+.botao, .botaogrey, .botaogrey2, .botaogrey3, .botaogrey4 {
+        border: none;
+        color: black;
+        padding: 9.5px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.1s; /* Adicionando transição para o efeito hover */
+}
+.botao{
+    background-color: rgba(153, 200, 253, 0.226);
+    /*border-radius: 40px;*/
+}
+.botaogrey, .botaogrey2, .botaogrey3, .botaogrey4{
+    background-color: rgba(219, 219, 219, 0.863);
+    /*border-radius: 40px;*/
+}
+
+.botao:hover {
+    /*border-radius: 40px;*/
+    background-color: red;/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+.botaogrey:hover, .botaogrey2:hover, .botaogrey3:hover, .botaogrey4:hover {
+    /*border-radius: 40px;*/
+    background-color: red;/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+
+/*FIM DA COLUNA 1*/
+
+/*INICIO DA COLUNA 2*/
+.coluna2{
+    background-color: #831ED2;
+}
+.botaoA1{
+    border: none;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    /*flex-wrap: wrap;
+    cursor: pointer;*/
+
+/*    transform: scale(0.95);
+    transition: 0.2s;*/
+}
+.botaoA1, .botaoA2, .botaoA3, .botaoA4, .botaoA5, .botaoA6, .botaoA7, .botaoA8, .botaoA9, .botaoA10, .botaoA11{
+    background-size: cover;
+}
+.botaoA1{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mg1TD7LJGFxDaYslh3KHmD1i5j8f9gJHqcXEe9tU5y44RT804LyW5Kq1fvsc-ZOqkHMQOXVtoo1_kgwXypLtu9HdWLS2uQ_eSscEK4LDQD8xjDbIjfMX8qz1KNqSphjNH77D-01z7koMQhdlJA1ExDUMB2hc9lrDgQAkqYWjOz9oE1S0L0FuMwIDbQ9vsdXESwAu4UC2-rssJZO5fdHQzNFr3zoaVcrtvB07aB4b50-8?encodeFailures=1&width=606&height=606);
+}
+.botaoA2{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mCoEoC8rPMuuo1-E_67htA23tjZ11s6I5qIS0aFhVHNofZ2FyB8U1hI4zdJyeJiz3IO2hG1n3xyExkTcT26jqsXMuPOb61mWxl6RVhYkE2BlGAZzdPkBSVNEnnjAiYrwtlDwQuOSwD6FI1RPD6NypS5MgErjUMoTdMxe0bYXaHmM8CMXnR8kURG5wdERrUzPGHgFEMlGcIQsP-K3wpfl0WiuUf_OBzgpcRVxZq7xWBMY?encodeFailures=1&width=151&height=151);
+}
+.botaoA3{
+    background-image: url(https://public.bl.files.1drv.com/y4mrvZw2kTuJyrY5OEmHjSuhuCdYZvyMqHIJ-xBOE2LiWN0sxjowXyhfCpcpRxDeM-y9_eDqqhd-XqP95lXXRreMjorEzp_EqnvDDjmJscizD0eOP54haKJPw_roZGrjFdHngdxH0rLMjGSacHGqmVmIbCJ9oqpkhRij-kWsm6mt1QCkNfVyNIsO179kzx_NO1ys-ohD3J-ZoFicwiyQOIlm8CcI2VZF7ZCvSs525aWoFg);
+}
+.botaoA4{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mfsv5x4dLe_fL94ywwq-EYFjQdFQYaTswn4uLONrTFQcypAtuZd_HWDgN5vmeBZowKJiisarcXJfHAcrMs43aypVltyUTo_o3WKB_az2yn8JHsO-F07DX9hhCL8fCaIw5aATVu2g2GCX4RnKsfcGAsmFHCab6jZSNvG80ZC4RUakJHZ_jON-CaRsFSmrZDgRDOoLz3YO5qUok35Ryaarr7f6oRkCrCsw7lEcO6nkJSGY?encodeFailures=1&width=606&height=606);
+}
+.botaoA5{
+    background-image: url(https://blz04pap001files.storage.live.com/y4m4UJ4Vh-3Tlhv9LLbaMoIC92Xdtoy73oqwID4TgcCMh1nPab2HV2PHsCkAuQ0NStWQ5gqrA-xiGAxnHUJJgsUT24lsg36x37GzFUvjdzgXemgRfdXgQIiQbIgmj_6-d6LBFaD74IizYuEGCYtO-tGCPsz4m42Jf9TCawyXwqzZtZ46jWUJq0TPl-5zcqtVJprPthjsyh8-PUjNDg66A2MKn990jMaQuPaqHxnz91cDeg?encodeFailures=1&width=606&height=606);
+}
+.botaoA6{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mfc-02g3RbWyfk9DvcxRbE6f8e8x28dBO1BogN0LrrEz4KZMLIqsYwIlwjS0BGiwnUNoOYH_vWMUD_hsFCCSUaqdzj17vLSr9gHl-A3BdhsTejqe0oazSjL0kSanBYILguCGGGVJkuh1Kaxg9Odvz02JFVcrgF-rPOqDtuvC2_gfXe3rL2CeKentZhQ8dQjH_29gTBJt4eeq6y7oRJFbefIRtgV8iolqs3LdMzviWCEw?encodeFailures=1&width=606&height=606);
+}
+.botaoA7{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mHZRnuiQINOSnl3BK3Y33QHeKBfztt0q8YidtDO-wgfrcsV9wlJ7BRFeYqeFbUzaHo0R9SrQmAFdypvp6KohGbIijEp0s5E0SUcvEwdkGeyPdygmGqKTSlL2A0GRthPJxa5ddLACEyFOjjWUNjux9A7TSaIAH4633fo21un3usLaRg5IfF6BcegbJYE9VDnQ9lJqxoIe1kLcqBmrpDtUAJ5vl46vETCw1TNy4W1NM1Xg?encodeFailures=1&width=606&height=606);
+}
+.botaoA8{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mAk134PJuMnWzJQ2VqfqDHjwcV3CVxaEcXAB7qPCRfi73-UU7iVQ8mAKJz3p2jQ_8WbGNQmxOo4bYCvoGqlVG2GQT98G3l2zUwp4p1_rML0z2gMCTil5vW4OS08ijaM37zMaAfmXu_OjTnhq35hmbUIOsDKi7hvDQAYEmb6YGuaZA51vQUsVSEIeUO8G9A7JZWGAfNVjPVn8Qhy9xSW6h86TYUIx5w7zzZq5PPtdqM4M?encodeFailures=1&width=606&height=606);
+}
+.botaoA9{
+    background-image: url(https://blz04pap001files.storage.live.com/y4m2ExFBzEzhw7mgw6YXDOoqNw2vwOxy_ysVy5yjgYQ5RvAUhu2RnysQesR0WSaVPSI3e7gi8y6trb_twVqzXi5IRqUsPVOlNpZvFLbd2y6fDkdsp9Ny4z8MHPqjvMgKc7YKxqvHN5joxS1O92gNWLGkvRhaSGmbi6E8Ok-EOFOqH_MGEqFBnMHPYdS6QWJ3lIK4j7NQLP6XRjqA4_AXG6ZYJgpy1yPep4dHMtOEVzmp28?encodeFailures=1&width=606&height=606);
+}
+.botaoA10{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mKTBJ_DDsDotlddKVP7D4b1csyN6YEKXB6ihPHHG_HYfi8dJ9RcZ9OBnbejlksW-k-98TgM9ilTYm6dXe5nTGCe8ZtBOW3x-c9WvkMUB8zYnPuJfMbFb-1WqQn699NYLQDCES4zaMQEiyN-fI7a8UCjrva2XAsK4dgvkBt-JP4fCxCkUPJiT21AYo1Bjkvtvyl51y2ME9CDnbh828oayrol3bSv2GRYWBYuUA9amTjHU?encodeFailures=1&width=606&height=606);
+}
+.botaoA11{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mL1MY3vKRMToHPLJHNjfBlQiC6srSQ7Hm4wGf4GtHtryfbUmdPG6Z7afJz7tA7dj4ivhAISD9AEiWGCbvOPVSJyuS7j2Znviqt4VF7TuKNBNwLlOmDbej3k6E6Ntoh-TM_1ZYdUo0KKVbXjrWRljcwzHy53Ml46EXHNUCGrBEgPvJL13u33bTa5jPc9vSlUukrgxwXXtfCuoCI44e3tLpRzojqhPNuajn0U6XhH9voM8?encodeFailures=1&width=606&height=606);
+}
+/*.botaoA1:hover {
+    transform: scale(1.1);
+}*/
+/*FIM DA COLUNA 2*/
+
+
+
+
+
+/*INICIO COLUNA 3*/
+.coluna3{
+    /*background-color: #7ED957;*/
+    background-color: rgb(184, 41, 41);
+}
+/*FIM DA COLUNA 3*/
+
+
+
+/*INICIO COLUNA 4*/
+.coluna4{
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.titulopapeleta, .titulofiscal{
+    background-color: white;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh; /* Isso é opcional, dependendo do layout da sua página */
+    font-weight: bold; /* Adicionando negrito ao texto */
+}
+.titulofiscal {
+    color: red;
+}
+.titulopapeleta {
+    color: blue;
+}
+
+
+.numerario{
+    font-size: 14px;
+}
+.fiscal{
+    width: 200px;
+    height: 70px;
+    background-color: rgb(255, 218, 175);
+}
+.botaofiscal, .numerario{
+    background-color: rgb(255, 218, 175);
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.botaofiscal:hover, .numerario:hover {
+    /*border-radius: 40px;*/
+    background-color: rgb(252, 142, 17);/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+.botaopapeleta{
+    background-color: rgb(188, 236, 148);
+    width: 100%;
+    height: 37px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.botaopapeleta:hover {
+    /*border-radius: 40px;*/
+    background-color: rgb(110, 216, 24);/*#4CAF50;*/ /* Definindo a cor de fundo quando o cursor estiver sobre o botão */
+    color: white; /* Alterando a cor do texto quando o cursor estiver sobre o botão */
+}
+
+
+/*.divcoluna4{
+    position: relative;
+    top: -10px;
+}*/
+
+/*.divcoluna4seg{
+    background-color: #831ED2;
+}*/
+/*FIM DA COLUNA 4*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.conteudo {
+    background-color: #f9f9f9;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: black;
+}
+
+.rtable3 tr td:nth-child(1){width:50%;}
+.rtable3 tr td:nth-child(2){width:50%;}
+/*.rtable3 tbody tr td:nth-child(3){width:33.3%;}*/
+.rtable3{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(243, 221, 22);
+}
+.rtable35{
+    border: red;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+
+.rtable4{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.rtable5{
+    /*background-color: white;*/
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+/*.coluna5{
+    /*display: none;
+}*/
+
+/*COLUNA 6*/
+/*.coluna6{
+    position: relative;
+    top: 0;
+}
+*/
+
+/* Novo estilo para a lista de links no pop-up */
+#listaLinks {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Centralizar a lista */
+    font-size: 21px;
+    /*font-size: 18px;*/
+}
+
+#listaLinks li {
+    margin-bottom: 10px;
+}
+
+#listaLinks li a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#listaLinks li a:hover {
+    /*color: #0056b3;*/
+    color: #000000;
+}
+/* Centralizar o título da pop-up */
+#tituloPopup {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*CSS DO NUMERO DA VERSAO*/
+#versao {
+    position: absolute;
+    top: 203px;
+    right: 10px;
+    /*background-color: rgba(248, 169, 169, 0.7);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888;*/
+    padding: 10px;
+    color:  rgba(219, 219, 219, 0.863);
+}
+
+@media only screen and (min-width: 1200px){
+    .botaoA1, .botaoA2, .botaoA3, .botaoA4, .botaoA5, .botaoA6, .botaoA7, .botaoA8, .botaoA9, .botaoA10, .botaoA11, .botaoA12{
+        border: none;
+        width: 160px;
+        height: 160px;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+    .rtable3{
+        width: 100vw;
+    }
+    .rtable35{
+        display: flexbox;
+    }
+    .coluna55{
+        width: 50%;
+    }
+    .coluna56{
+        width: 50%;
+    }
+    .coluna7{
+        display: none;
+    }
+}
+
+/*@media only screen and (max-width: 1024px)*/
+@media only screen and (max-width: 1199px){
+    .botaoA1, .botaoA2, .botaoA3, .botaoA4, .botaoA5, .botaoA6, .botaoA7, .botaoA8, .botaoA9, .botaoA10, .botaoA11, .botaoA12{
+        border: none;
+        width: 120px;
+        height: 120px;
+        flex-wrap: wrap;
+        cursor: pointer;
+    }
+    .tituloblackfriday{
+        color: white;
+        position: absolute;
+        top: 79px;
+        font-size: 3.85vw; 
+        font-weight: bold;
+        align-items: center;
+    }
+    .redfriday{
+        position: absolute;
+        top: 120px;
+        color: red;
+    }
+    .tituloblackfriday, .redfriday{
+        left: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 412px){
+    .botao1, .botao2, .botao3{
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+    }
+    .rtable2{
+        width: 50%;
+        text-align: center;
+    }
+    .coluna4{
+        width: 0px;
+        height: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/*TELA  768px*/
+@media screen and (max-width: 768px) {
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+.tituloblackfriday, .redfriday{
+    display: none;
+}
+.background{
+    background-image: url(/portfolio/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+/*.corpomenu{
+    display: none;
+}*/
+.botaomenu{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: #97ec50;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 5%;
+}
+.plus{
+    position: relative;
+    background-color: #007BFF;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    top: 15px;
+    left: 310px;
+    font-size: 60px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+}
+.alana, .botao1, .botao2, .botao3, .botao4, .botao5, .botao6, .botao7, .botao8, .botao9, .botao10, .botao11{
+    width: 48.09px;
+    height: 48.09px;
+}
+.botao10, .botao11{
+    display: none;
+}
+.coluna1, .coluna, .coluna3, .coluna4, .rtable3, .rtable4/*, .rtable35*/{
+    display: none;
+}
+.titulo{
+    background-image: url(/img3/6CADASTRO.png);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.rtable2{
+    width: 100%;
+}
+.coluna2{
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+.coluna03{
+    position: absolute;
+    display: flex;
+    top: 110px;
+    z-index: 1;
+}
+.botaoA1, .botaoA2, .botaoA3, .botaoA4, .botaoA5, .botaoA6, .botaoA7, .botaoA8, .botaoA9, .botaoA10, .botaoA11, .botaoA12{
+    width: 120px;
+    height: 120px;
+}
+.coluna7{
+    width: 100%;
+    height: 100vh;
+}
+}

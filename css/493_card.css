@@ -1,0 +1,91 @@
+
+.card1x1{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mz0QubGcd472iI4_OQbfqgQ9d3Y8HOdP8PsBqghUWcGvsPH_hJUEaAkJKd47nqiptwcGkbTfvk2-w752YlEIqGhR_MzYYodEiKghawaegpk0p1y2krXKG_K9FLWljS-CbPdFTH42SngEBb-lFHI_Wnpp16-8lNsvzTcGT_mp1E8kB0g8riE6ZsEFCIisTjcFC?encodeFailures=1&width=606&height=606);
+}
+.card2x1{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mqlffUj2l9I22xoAMwOf-Wm40KEEhJoIs5Y2hiGxAmZUFRDIc0liQsUehm5lNqKmeCjg2UKfL5TdNBD38RzpX1gR-6IKdKEjdSv5bhSOg9Y7GG8tieqUebslil4gZrlasM7iREqy0R9jZUmWxklcSpCil8Ad2APCaKj1M_7qkWLo8jHWEVOA6EvgoaxvtmIRF?encodeFailures=1&width=606&height=606); 
+}
+.cardtelefonia{
+    background-image: url(https://blz04pap001files.storage.live.com/y4m4vYQylkBCcyPRHyCo2garVX1fm7yo9hZXicwRy-In-pPfgqrQ_wMhYJaRYa835ZTCD8EId3ApKa2k54PaEeyhE_pWtl9FFxxkKmYuFwUp0AyaU6CqLKyfBChBNiPPwgbvhGvAGCQ39rXzZqCz8psGJsCibYM909asnhED7JuHA6_dM9bS6CZSXZXG6O8OLid?encodeFailures=1&width=606&height=606);
+}
+.cardfgts1{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mcb2pSChGwnzPVLreCFfXphWAhSYW_CL9XaPs-yZtqGoibJtf91gaFtMhW0Cj-KZFk9T3qdraDPuispvdbx3vUZcLfG2c0TRv-6DTm4F4pKjE5aaHBDkg35tcw-SpmF31oCqyJ14QNxcDzk8fEUKQQbtmTUyHZ6dAedUfiyhsxvgahwf1cNKBj8RjH2j0KFyL?encodeFailures=1&width=606&height=606);
+}
+.cardfgts2{
+    background-image: url(https://blz04pap001files.storage.live.com/y4m-PtGGZf7svcLacz3bfWeknLW7fiowq9GA8slfVaeciuR3lxO26jg0ali_3F3B6xdvuEEmvjHE9agnnrRwzPbAXd8OUUPsb2Is_q9axMld2RrrDJ8e7vTXNEOdwySmnohyLIupBCG_Yg7uneXEUiLU35kHpPMRYvEKFFnVeBmsK2ofZauzd-YXWCQOg60mTqB?encodeFailures=1&width=606&height=606);
+}
+.cardpanfletofgts{
+    background-image: url(https://blz04pap001files.storage.live.com/y4mXhZ3_hGIGx-pztq-3rcY3crmilIgokeJIBPkkmwou2SqRf3_sUDAYWHXpeW95pqsSJxn5EGzJDmDX5nn-J9odU4zGldJ7h6k9w65I7rcP7O2Z6fLjzPS25GM0csl16e-VSAqQnWlxXcf4om-iISpt5UHE9S4iileWMtA2pReYJ4UdMBp3gbSeLP4Gt_6sSiR?encodeFailures=1&width=606&height=606); 
+}
+
+.card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease; /* Ajuste a duração e a função de temporização para suavizar a animação */
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: inline-block;
+    border: 2px solid transparent; /* Adicione uma borda transparente */
+}
+
+.card1x1 img, .card2x1 img, .cardtelefonia img, .cardfgts1 img, .cardfgts2 img, .cardpanfletofgts img{
+    display: none;
+}
+
+.card1x1:hover, .card2x1:hover, .cardtelefonia:hover, .cardfgts1:hover, .cardfgts2:hover, .cardpanfletofgts:hover{
+    transform: scale(1.05);
+    border: 2px solid #00f7ff; /* Adicione uma borda com cor neon azul ao fazer hover */
+}
+
+.card1x1::before, .card2x1::before, .cardtelefonia::before, .cardfgts1::before, .cardfgts2::before, .cardpanfletofgts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease; /* Ajuste a duração e a função de temporização para suavizar a animação */
+    border-radius: 20px;
+}
+
+.card1x1:hover::before, .card2x1:hover::before, .cardtelefonia:hover::before, .cardfgts1:hover::before, .cardfgts2:hover::before, .cardpanfletofgts:hover::before {
+    opacity: 1;
+}
+.table-card{
+    /*background-color: rgb(26, 71, 139);*/
+    background-color: rgb(184, 41, 41);
+    /*background-color: rgb(139, 26, 26);*/
+    /* é esse aqui o fundo background-color: rgb(184, 41, 41);*/
+    position: relative;
+    top: -100px;
+}
+@media only screen and (max-width: 1290px){
+    .card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts{
+        width: 100px;
+        height: 100px;   
+    }
+}
+@media only screen and (max-width: 1068px){
+    .card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts{
+        width: 90px;
+        height: 90px;   
+    }
+}
+@media only screen and (max-width: 1024px){
+    .card1x1, .card2x1, .cardtelefonia, .cardfgts1, .cardfgts2, .cardpanfletofgts{
+        width: 77px;
+        height: 77px;
+        
+    }
+}
