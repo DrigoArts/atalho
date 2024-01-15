@@ -213,7 +213,8 @@ function FlashDinamico() {
     window.open(url, target);
 }
 function Gente() {
-    var url = "http://gentegestao.lasa.lojasamericanas.com.br/psp/hr/EMPLOYEE/HRMS/?cmd=login&LanguageCd=POR";
+    //var url = "http://gentegestao.lasa.lojasamericanas.com.br/psp/hr/EMPLOYEE/HRMS/?cmd=login&LanguageCd=POR";
+    var url = "https://gentegestao.americanas.io";
     var target = "_blank";
 
     window.open(url, target);
