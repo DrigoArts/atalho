@@ -1,4 +1,23 @@
-    // Função para criar um botão e adicionar ao menu
+//TITULOS DA ULTIMA COLUNA
+    // Suponha que você queira mudar o texto para "NOVO TÍTULO"
+var novoTitulo = "FISCAL";
+document.getElementById("tituloFiscal").textContent = novoTitulo;
+
+    // Suponha que você queira mudar o texto para "NOVO TÍTULO"
+var novoTitulo = "PAPELETAS";
+document.getElementById("titulopapeleta").textContent = novoTitulo;
+
+    // Suponha que você queira mudar o texto para "NOVO TÍTULO"
+    var novoTitulo = "Versão 14.8.0";
+    document.getElementById("versao").textContent = novoTitulo;
+
+// Suponha que você queira mudar o texto para "NOVO TÍTULO"
+var novoTexto = "LASA 493";
+document.querySelector("titulo1").textContent = novoTexto;
+
+//QUEBRA DE LINHA
+
+// Função para criar um botão e adicionar ao menu
     function criarBotao(classe, onClickFunction) {
         var botao = document.createElement("button");
         botao.className = classe;
@@ -16,7 +35,7 @@
     });
     
     criarBotao("botao6", function() {
-        abrirLinkEmGuiaAnonima('Gráfico de vendas');
+        abrirLinkPerformanceLoja('Gráfico de vendas');
     });
     
     criarBotao("botao2", function() {
@@ -333,22 +352,4 @@ criarBotao5("botaopapeleta", "", function() {
     colocaronomedafunção();
 });
 
-
-
-//TITULOS DA ULTIMA COLUNA
-    // Suponha que você queira mudar o texto para "NOVO TÍTULO"
-var novoTitulo = "FISCAL";
-document.getElementById("tituloFiscal").textContent = novoTitulo;
-
-    // Suponha que você queira mudar o texto para "NOVO TÍTULO"
-var novoTitulo = "PAPELETAS";
-document.getElementById("titulopapeleta").textContent = novoTitulo;
-
-    // Suponha que você queira mudar o texto para "NOVO TÍTULO"
-    var novoTitulo = "Versão 14.7.99";
-    document.getElementById("versao").textContent = novoTitulo;
-
-// Suponha que você queira mudar o texto para "NOVO TÍTULO"
-var novoTexto = "LASA 493";
-document.querySelector("titulo1").textContent = novoTexto;
 
